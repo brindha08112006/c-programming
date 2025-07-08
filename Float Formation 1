@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    float a;
+    scanf("%f",&a);
+    printf("%.6f\n",a);
+    printf("%.4f\n",a);
+    printf("%.2f\n",a);
+    printf("%d",(int)round(a));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
