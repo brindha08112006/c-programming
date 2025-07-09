@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int num, sum;
+
+    scanf("%d", &num);
+    sum = (num / 10) + (num % 10);
+
+    printf("Bird said:%d\n", num);
+    printf("Alice must go in path-%d\n", sum);
+
+    return 0;
+}
+
+    
