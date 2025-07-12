@@ -3,40 +3,41 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main() 
+int main()
 {
     char name[50];
-    int m1,m2,m3,m4,m5,total;
-    float avg;
-    scanf("%s",name);
-    printf("Name of the student;%s\n",name);
-    scanf("%d",&m1);
-    scanf("%d",&m2);
-    scanf("%d",&m3);
-    scanf("%d",&m4);
-    scanf("%d",&m5);
-    Total=m1+m2+m3+m4+m5;
-    if("Total marks %.1f\n",tot);
-    avg=total/50;
-    Printf("Average mark:%.1f\n"avg);
-    if(avg==100)
-    {
-        printf("Grade mark:s");
-    }
-    else if(avg>=90)
-    {
-        printf("Grade mark:A");
-    }
-    else if(avg>80)
-    {
-        printf("Grade mark:B");
-    }
-    else if(avg>=70)
-    {
-        printf("Grade mark:C");
-    }
-    else if(avg>=60)
-    {
-        printf("Grade mark=D");
-    }
-    else if(avg>50)
+    int m1, m2, m3, m4, m5, total;
+    float average;
+    char grade[10];
+
+    scanf("%s", name);
+    scanf("%d", &m1);
+    scanf("%d", &m2);
+    scanf("%d", &m3);
+    scanf("%d", &m4);
+    scanf("%d", &m5);
+
+    total = m1 + m2 + m3 + m4 + m5;
+    average = total / 5.0;
+
+    if (average >= 90)
+        sprintf(grade, "A");
+    else if (average >= 80)
+        sprintf(grade, "B");
+    else if (average >= 70)
+        sprintf(grade, "C");
+    else if (average >= 60)
+        sprintf(grade, "D");
+    else if (average >= 50)
+        sprintf(grade, "E");
+    else
+        sprintf(grade, "Fail");
+
+    printf("Name of the Student:%s\n", name);
+    printf("Total Mark:%d\n", total);
+    printf("Average Mark:%.1f\n", average);
+    printf("Grade Mark:%s\n", grade);
+
+    return 0;
+
+}
