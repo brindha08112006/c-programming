@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n, temp, sum = 0;
+    scanf("%d", &n);
+    if(n > 99 || n < -99)
+    {
+        if(n < 0)
+    {
+            n = n - 1;
+    }
+        temp = n;
+        while(temp !=0){
+            sum += temp % 10;
+            temp /= 10;
+            }
+        printf("Sum of digit is %d\n",sum);
+        }
+    else
+        {
+        printf("Invalid Input\n");
+            }
+    return 0;
+}
