@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    long long num; 
+    int count = 0;
+    scanf("%lld", &num);
+    if (num >= 1 && num <= 10000000) {
+
+        long long temp = num;
+        while (temp != 0) {
+            temp = temp / 10;
+            count++;
+        }
+        printf("The count of the given integer is: %d\n", count);
+    } else {
+        printf("Enter a Valid Input\n");
+    }
+    return 0;
+
+}
