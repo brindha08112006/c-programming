@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int n, i, friend_home, found = -1;
+    scanf("%d", &n);  
+    int doors[n];
+    for(i = 0; i < n; i++) 
+    {
+        scanf("%d", &doors[i]);  
+    }
+    scanf("%d", &friend_home);  
+    for(i = 0; i < n; i++)
+    {
+        if(doors[i] == friend_home)
+        {
+            found = i;  
+            break;
+        }
+    }
+    if(found != -1)
+    {
+       printf("Door Number is %03d-DN", found);
+    } 
+    else
+    {
+        printf("-1");
+    }
+    return 0;
+}
