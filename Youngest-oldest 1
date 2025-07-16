@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int n, i, age;
+    scanf("%d", &n);
+    if(n < 0) 
+    {
+        printf("Invalid Input");
+        return 0;
+    }
+    int youngest = 1000; 
+    int oldest = -1; 
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &age);
+        if(age < 0)
+        {
+            printf("Invalid Input");
+            return 0;
+        }
+        if(age < youngest) {
+            youngest = age;
+        }
+        if(age > oldest) {
+            oldest = age;
+        }
+    }
+    printf("Youngest=%d\n", youngest);
+    printf("Oldest=%d\n", oldest);
+    return 0;
+}
