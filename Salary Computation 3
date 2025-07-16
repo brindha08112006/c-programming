@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int basic;
+    double gross_salary;
+    scanf("%d", &basic);
+    gross_salary = basic * 2.05; 
+    printf("%.2lf", gross_salary); 
+    return 0;
+}
+    
