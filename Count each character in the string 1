@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char str[1000];
+    int count[256] = {0}; 
+    int printed[256] = {0}; 
+    fgets(str, sizeof(str), stdin);
+    for (int i = 0; str[i] != '\0'; i++) 
+    {
+        count[(unsigned char)str[i]]++;
+    }
+    for (int i = 0; str[i] != '\0'; i++)
+    {
+        unsigned char ch = str[i];
+        if (!printed[ch] && ch != '\n') 
+        {
+            printf("%c   %d\n", ch, count[ch]);
+            printed[ch] = 1;
+        }
+    }
+    return 0;
+}
