@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    if (num < 1 || num > 50) 
+    {
+        printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!");
+    } 
+    else 
+    {
+       printf("The first %d Natural Numbers are:\n", num);
+        for (int i = 1; i <= num; i++) {
+            printf("%d ", i);
+        }
+    }
+    return 0;
+
+}
+
