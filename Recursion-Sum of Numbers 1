@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int n, sum = 0;
+    scanf("%d", &n);
+    if (n < 1 || n > 50) 
+    {
+        printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+    } 
+    else 
+    {
+        sum = (n * (n + 1)) / 2;
+        printf("The sum of numbers from 1 to %d : %04d", n, sum);
+    }
+    return 0;
+
+}
