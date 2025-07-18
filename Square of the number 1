@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N;
+    scanf("%d", &N);
+    if(N >= 1 && N <= 9)
+        {
+        printf("Square of %d is %d", N, N*N );
+    }
+    else
+        {
+        printf("Invalid Input");
+    } 
+    return 0;
+}
