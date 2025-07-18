@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int num, sum = 0;
+    scanf("%d", &num);
+    if (num >= 1000) 
+    {
+        printf("Enter a Valid Input!!!!!!!");
+    }
+    else 
+    {
+        int temp = num;
+        while (temp > 0)
+        {
+            sum += temp % 10;
+            temp /= 10;
+        }
+        printf("Sum of Digit:%04d", sum);
+    }
+    return 0;
+}
+    
